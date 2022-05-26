@@ -1,0 +1,371 @@
+body {
+    font-size: 14px;
+    font-family: 'Book antiqua';
+}
+
+.logo {
+    height: 8rem;
+    width: auto;
+    padding: 15px;
+    border-radius: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mentions {
+    text-align: left;
+    max-width: 80%;
+}
+
+/* Photo en filigrane*/
+.gaelleWatermark {
+    background-image: url(/assets/images/photo-de-gaelle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.familyWatermark {
+    background-image: url(/assets/images/photo-famille.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.projetWatermark {
+    background-image: url(/assets/images/projet-pinceau-et-plume.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/**Lettrine paragraphe**/
+#lettrine:first-letter {
+
+    font-size: 3rem;
+    font-weight: bold;
+    color: #B6AFD9;
+    padding: 10px 15px 10px 0;
+    margin-right: 5px;
+    float: left;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+    max-width: 768px;
+    padding: 20px;
+
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+/**** Paramétrage du menu pour mobile ****/
+/* Caché le menu par défaut*/
+#menu li {
+    display: none;
+}
+
+/* Personnalisation du label Menu*/
+nav#menu {
+    text-align: center;
+    color: #fcfcfc;
+    font-family: 'Book antiqua';
+    background-color: #B6AFD9;
+    border-radius: 8px 8px 0 0;
+    line-height: 50px;
+}
+
+label.icon {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+label.icon::after {
+    position: relative;
+    top: 10px;
+}
+
+input#mobile {
+    display: none;
+}
+
+/* Permet que le menu s'affiche par dessus le contenu de dessous du menu */
+ul.dropdownmenu {
+    position: absolute;
+    width: 100%;
+}
+
+/* Faire de sorte que le menu s'affiche en cliquant sur Menu) */
+input#mobile:checked+ul li {
+    display: block;
+}
+
+/* Création d'un icône juste après le menu déroulant */
+.icon::after {
+    content: "\1F893";
+    padding-left: 2px;
+    position: relative;
+    top: 5px;
+}
+
+/* Personnalisation de chaque lien */
+#menu ul li a {
+    color: #000000;
+    text-decoration: inherit;
+    line-height: 50px;
+    height: 50px;
+
+}
+
+/* Fond d'écran au passage de la souris sur les menus et sous-menus */
+#menu ul li a:hover {
+    color: #FFFFFA;
+    background-color: #A29DAC;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Supp. des puces et des marges pour les listes du menu et du sous-menus avec personalisation MAJ, Centrage etc */
+ul {
+    list-style-type: none;
+    background-color: #B6AFD9;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Book antiqua;
+}
+
+img.blogVlog {
+    width: 100%;
+    height: 100%;
+}
+
+/*affichage pour la galerie photo en-dessus de 768px*/
+.gallery {
+    border: 5px solid #B6AFD9;
+}
+
+.gallery:hover {
+    border: 5px solid #a695ce;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.dropdownmenu,
+.dropdownmenu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul ul {
+    display: none;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#menu>ul li {
+    border-bottom: 0.1px solid #FFFFFA;
+}
+
+#menu>ul li:first-child {
+    border-top: 0.1px solid #FFFFFA;
+}
+
+#menu>ul li:last-child {
+    border: none;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #8b86a7;
+    text-align: center;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+
+
+/** Affichage pour les écrans au-dessus de 768px **/
+
+@media screen and (min-width:768px) {
+    h1 {
+        color: #B6AFD9;
+        font-size: 4rem;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    body {
+        background-color: #F7F7F2;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: justify;
+        max-width: 80%;
+        padding: 20px;
+        margin-left: 10%;
+    }
+
+
+    .mentions {
+        text-align: left;
+        max-width: 80%;
+        padding: 20px;
+        margin-left: 10%;
+    }
+
+    /*affichage pour la galerie photo au-dessus de 768px*/
+
+
+    img {
+        width: 100%;
+        height: 480px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .responsiveImage {
+        padding: 0 6px 20px;
+        float: left;
+        width: 24.99999%;
+    }
+
+
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    ul {
+        list-style-type: none;
+        background-color: #F7F7F2;
+        cursor: pointer;
+    }
+
+    /* Masquage des sous-menu par defaut */
+    #menu ul ul {
+        display: none;
+    }
+
+    /* Modification du menu mobile pour affichage sur grand écran */
+    ul.dropdownmenu {
+        position: static;
+    }
+
+    li {
+        margin: 2px;
+    }
+
+    #menu label,
+    #menu input {
+        display: none;
+    }
+
+    input#mobile:checked+ul li,
+    #menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+    }
+
+
+    /* Disposition horizontale des elements de menu */
+    #menu ul>li {
+        display: inline-block;
+
+        /* Positionnement relative des elements de menu pour pouvoir positionner les sous-menus correctement en absolu */
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        background-color: #B6AFD9;
+        background-image: -webkit-linear-gradient(top, #B6AFD9 0%, #A29DAC 100%);
+        background-image: linear-gradient(to bottom, #B6AFD9 0%, #A29DAC 100%);
+    }
+
+    /*Menu déroulant avec transition*/
+    #menu ul li ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: 5s all;
+    }
+
+    #menu ul li:hover ul {
+        max-height: 40em;
+        opacity: 0.9;
+    }
+
+    #menu ul ul li {
+        display: inherit;
+        border-radius: 0;
+    }
+
+    #menu ul ul li:hover {
+        border-radius: 0;
+    }
+
+    #menu ul ul li:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+
+
+    #menu ul ul {
+        position: absolute;
+        width: 270px;
+    }
+
+    /* Fond d'écran au passage de la souris sur les menus et sous-menus */
+    nav#menu ul li a:hover {
+        color: #FFFFFA;
+        background-color: #B6AFD9;
+        border-radius: inherit;
+        padding: 5px 20px;
+
+    }
+
+
+    /* les a href */
+
+    #menu ul a {
+        display: block;
+        padding: 5px 20px;
+        color: #fff;
+        font-family: Book antiqua;
+    }
+
+
+
+}
